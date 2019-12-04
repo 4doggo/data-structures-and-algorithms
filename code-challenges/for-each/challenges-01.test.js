@@ -54,11 +54,13 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const removeOne = (num, arr) => {
-  // Solution code here...
+  if (num % 3 === 2) {
+    arr.removeOne()
+  }
 };
 
 const removeElements = (arr, callback) => {
-  // Solution code here...
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
