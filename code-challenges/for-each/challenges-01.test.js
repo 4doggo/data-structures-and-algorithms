@@ -33,12 +33,14 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr, value) => {
+  arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
-  let arr = []
-  return callback()
-  return []
+  for (let i = 0; i < times; i++) {
+    callback(arr, num);
+  }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -55,12 +57,15 @@ Return the modified array.
 
 const removeOne = (num, arr) => {
   if (num % 3 === 2) {
-    arr.removeOne()
+    arr.pop()
   }
 };
 
 const removeElements = (arr, callback) => {
-  
+  for (let i = 0; i < arr.length; i++) {
+    callback(arr[i], arr);
+  }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -70,7 +75,8 @@ Write a function named removeWithForEach that produces the same output as challe
 ------------------------------------------------------------------------------------------------ */
 
 const removeWithForEach = (arr, callback) => {
-  // Solution code here...
+  arr.forEach(value => callback(value, arr));
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -84,7 +90,12 @@ This anonymous function should accept up to three arguments: the element, the in
 ------------------------------------------------------------------------------------------------ */
 
 const removeWithAnon = (arr) => {
-  // Solution code here...
+  arr.forEach(function (element) {
+    if (element % 3 === 2) {
+      arr.pop();
+    }
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -105,7 +116,13 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-  // Solution code here...
+  let list = [];
+  availableItems.forEach(function (element) {
+    if (element.available === true) {
+      list.push(element.name);
+    }
+  });
+  return list;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -123,7 +140,22 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
-  // Solution code here...
+  let output = [];
+  arr.forEach(function (value) {
+    if (value % 3 === 0 && value % 5 === 0) {
+      output.push('Fizz Buzz');
+    }
+    else if (value % 3 === 0) {
+      output.push('Fizz');
+    }
+    else if (value % 5 === 0) {
+      output.push('Buzz');
+    }
+    else {
+      output.push(value);
+    }
+  });
+  return output;
 };
 
 /* ------------------------------------------------------------------------------------------------
