@@ -4,13 +4,14 @@
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
 
-Write a function that appends ' The end.' to a string, and returns the modified string. The original source string should not be modified.
-
+Write a function that appends ' The end.' to a string, and returns the modified string. 
+The original source string should not be modified.
 ------------------------------------------------------------------------------------------------ */
 
 const appendTheEnd = (str) => {
-  appendTheEnd.append("The end.")
-  return appendTheEnd()
+  let newStr = str;
+  newStr = `${newStr} The end.`;
+  return newStr;
 };
 
 
@@ -18,8 +19,9 @@ const appendTheEnd = (str) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function that accepts an array and copies the first element to the end of the array. The change should be reflected in the source array that was passed in to the function. That is, the function should modify the array 'in place'.
-
+Write a function that accepts an array and copies the first element to the end of 
+the array. The change should be reflected in the source array that was passed in to 
+the function. That is, the function should modify the array 'in place'.
 Do not use a return statement.
 
 For example:
@@ -30,15 +32,16 @@ console.log(a) prints [1, 2, 3, 1]
 
 const appendFirstToLast = (arr) => {
 
+  const first = arr[0];
+  arr.push(first)
+
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
 Write a function that accepts an object and an integer as arguments and adds a new property to the object called yearBorn. The value of the yearBorn property should be the integer that was passed in.
-
 The change should be reflected in the source object that was passed in to the function. That is, the function should modify the object 'in place'.
-
 Do not use a return statement.
 
 For example:
@@ -48,14 +51,14 @@ console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
 ------------------------------------------------------------------------------------------------ */
 
 const addBirthYearProperty = (obj, year) => {
-  // Solution code here...
+  obj.yearBorn = year;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
 Write a function that accepts an array of people objects and adds a new property called isAuthor to each object in the list. Set the value of the new property to true.
-
 The function should modify the object in place. Do not use a return statement.
 
 For example:
@@ -65,16 +68,20 @@ console.log(people[1].isAuthor) prints true
 ------------------------------------------------------------------------------------------------ */
 
 const setStatusAsAuthor = (people) => {
-  // Solution code here...
+
+  people.forEach(person => person.isAuthor = true);
+
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
+
 Write a function that accepts two arrays. Append the values from the second array into the first,
 maintaining the ordering.
 
 The function should modify the first array in place. Do not use a return statement.
+
 
 For example:
 const a = [1, 2]; NOTE: If you assign an array to a `const`, you can't re-assign it later, but you can change the values in the array.
@@ -84,18 +91,20 @@ console.log(a) prints [1, 2, 3, 4]
 ------------------------------------------------------------------------------------------------ */
 
 const append = (arr1, arr2) => {
-  // Solution code here...
+
+  arr2.forEach(value => arr1.push(value));
 
 };
 
 /* ------------------------------------------------------------------------------------------------
-TESTS
+
 
 All the code below will verify that your functions are working to solve the challenges.
 
 DO NOT CHANGE any of the below code.
 
 Run your tests from the console: jest challenges-02.test.js
+
 
 ------------------------------------------------------------------------------------------------ */
 
