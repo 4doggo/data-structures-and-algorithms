@@ -3,7 +3,9 @@
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
 
-Write a function named isNum that takes in a string or number of any length. This function should use a regular expression pattern to return true if the input contains a number, and false if the input does not contain a number.
+Write a function named isNum that takes in a string or number of any length. 
+This function should use a regular expression pattern to return true if the input 
+contains a number, and false if the input does not contain a number.
 
 For example:
 12345 returns true
@@ -13,19 +15,28 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const isNum = (input) => {
-  // Solution code here...
+  let regex = /\d/;
+  return regex.test(input);
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named isCapitalized that takes in a string. This function should use a regular expression pattern to match all words that begin with a capital letter. It should only match words, not punctuation.
+Write a function named isCapitalized that takes in a string. 
+This function should use a regular expression pattern to match all words 
+that begin with a capital letter. It should only match words, not punctuation.
 
 Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
 const isCapitalized = (str) => {
-  // Solution code here...
+  const arr = []
+  const regex = /[A-Z][a-z]*/gm;
+  if (str.match(regex) === null) {
+    return arr;
+  } else {
+    return str.match(regex);
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
