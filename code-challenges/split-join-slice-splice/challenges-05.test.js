@@ -27,13 +27,15 @@ const howMuchPencil = (str) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function name wordsToCharList that, given a string as input, returns a new array where every element is a character of the input string.
+Write a function name wordsToCharList that, given a string as input, 
+returns a new array where every element is a character of the input string.
 
 For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 ------------------------------------------------------------------------------------------------ */
 
-const wordsToCharList = (arr) => {
+const wordsToCharList = (str) => {
   return str.split('');
+
 };
 
 
@@ -151,8 +153,6 @@ const removeEvenValues = (arr) => {
   return arr;
 };
 
-};
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7
 
@@ -169,6 +169,12 @@ removeLastCharacters('Gregor', 9) returns ''
 ------------------------------------------------------------------------------------------------ */
 
 const removeLastCharacters = (str, numberOfCharacters) => {
+  if (str.length > numberOfCharacters) {
+    str = str.substring(0, (str.length - numberOfCharacters));
+  } else if (str.length <= numberOfCharacters) {
+    str = '';
+  }
+  return str;
 };
 
 
