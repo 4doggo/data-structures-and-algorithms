@@ -46,7 +46,14 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  // Solution code here...
+  let array = []
+  let regex = /^[A-J]\w*/gi;
+  arr.forEach(city => {
+    if city.match(regex) === null) { }
+    else {
+      array.push(city);
+    }
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -62,7 +69,8 @@ Do not use the vertical bar (pipe) in your pattern.
 ------------------------------------------------------------------------------------------------ */
 
 const matchMonth = (input) => {
-  // Solution code here...
+  let regex = /^[Oo]ct(ober)?\b/;
+  return regex.test(input);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -76,7 +84,8 @@ The expected output of "Hello, and have a wonderful day!" is ["and ", "have ", "
 ------------------------------------------------------------------------------------------------ */
 
 const noPunctuation = str => {
-  // Solution code here...
+  let regex = /\w+\s/g;
+  return str.match(regex);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -92,7 +101,7 @@ For example, 'Welcome to Code 301!' will return 'W_lc_m_ t_ C_d_ 301!'.
 ------------------------------------------------------------------------------------------------ */
 
 let hangman = (str) => {
-  // Solution code here...
+  return str.replace(/[aeiou]/gmi, '_');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -108,8 +117,10 @@ Hint: All of these words end with the letters "ells".
 const seashells = 'She sells seashells by the seashore. The shells she sells are surely seashells. So if she sells shells on the seashore, I\'m sure she sells seashore shells.';
 
 const findShells = (str) => {
-  // Solution code here...
+  let regex = /\w*ells\b\w*/g;
+  return str.match(regex);
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
