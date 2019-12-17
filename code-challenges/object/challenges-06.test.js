@@ -147,7 +147,8 @@ CHALLENGE 6 - Stretch Goal
 
 Write a function named houseSize that takes in the array of characters and creates an object for each house containing the name of the house and the number of members.
 
-All of these objects should be added to an array named "sizes". Return the "sizes" array from the function.
+All of these objects should be added to an array named "sizes". 
+Return the "sizes" array from the function.
 
 For example: [{ house: 'Stark', members: 7 }, { house: 'Arryn', members: 3 }, ... ].
 ------------------------------------------------------------------------------------------------ */
