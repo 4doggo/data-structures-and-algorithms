@@ -93,7 +93,8 @@ const listFoods = (recipe) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
-Write a function named splitFoods that uses split to produce the same output as Challenge 3.
+Write a function named splitFoods that uses split to produce the same 
+output as Challenge 3.
 
 You may also use other string or array methods.
 ------------------------------------------------------------------------------------------------ */
