@@ -12,21 +12,39 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 ------------------------------------------------------------------------------------------------ */
 
 const count = (target, input) => {
-  // Solution code here...
+  let counter = 0;
+  input.map(value => {
+    value.map(value => {
+      if (value === target) {
+        counter++
+      }
+    })
+  })
+  return counter;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function that, given an array of integer arrays as input, calculates the total sum of all the elements in the array.
+Write a function that, given an array of integer arrays as input, calculates the total sum of all 
+the elements in the array.
 
-You may want to use filter, map, or reduce for this problem, but are not required to. You may need to use the same method more than once.
+You may want to use filter, map, or reduce for this problem, but are not required to. 
+You may need to use the same method more than once.
 
 For example, [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]] returns 66.
 ------------------------------------------------------------------------------------------------ */
 
 const totalSum = (input) => {
-  // Solution code here...
+  const outerSum = input.reduce((firstCounter, innerArr) => {
+    const sum = innerArr.reduce((answerSoFar, value) => {
+      answerSoFar = answerSoFar + value;
+      return answerSoFar;
+    }, 0);
+    firstCounter = firstCounter + sum;
+    return firstCounter;
+  }, 0);
+  return outerSum;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -42,7 +60,25 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 ------------------------------------------------------------------------------------------------ */
 
 const divisibleByFiveTwoToThePower = (input) => {
-  // Solution code here...
+  let finalArray = [];
+
+  input.forEach(array => {
+
+    const smallerArr = array.reduce((answerSoFar, value) => {
+      if (typeof value === 'number' && value % 5 === 0) {
+        answerSoFar.push(value)
+      }
+      return answerSoFar;
+    }, [])
+
+    const powerArr = smallerArr.map(value => {
+      return 2 ** value;
+    })
+
+    finalArray.push(powerArr)
+
+  })
+  return finalArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -108,9 +144,15 @@ let starWarsData = [{
 }];
 
 let findMaleAndFemale = (data) => {
-  // Solution code here...
+  let results = data.reduce((nameArr, value) => {
+    if (value.gender === 'male' || value.gender === 'female') {
+      nameArr.push(value.name + ' and ');
+    }
+    return nameArr;
+  }, []);
+  let str = results.join('').slice(0, -5);
+  return str;
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -118,9 +160,15 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 ------------------------------------------------------------------------------------------------ */
 
 let findShortest = (data) => {
-  // Solution code here...
+  const shortest = data.reduce((currentOne, value) => {
+    if (value.height > currentOne.height) {
+      currentOne = value.name;
+    }
+    return currentOne;
+  }, starWarsData[0]);
+  console.log(shortest);
+  return shortest;
 };
-
 /* ------------------------------------------------------------------------------------------------
 TESTS
 
