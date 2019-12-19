@@ -59,7 +59,8 @@ const citiesAtoJ = (arr) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
-You have created a game application and begin by asking users an easy question: In which month is Halloween?
+You have created a game application and begin by asking users an easy question: 
+In which month is Halloween?
 
 Write a function named matchMonth which uses a regular expression pattern to match any of these inputs: October, Oct, october, oct
 
