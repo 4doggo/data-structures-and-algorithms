@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class ArrayReverse {
   public static void main(String[] args) {
-    // create the array to test your code on later
+    // create the array to test your code on latr
     int[] startArr = new int[] { 1, 2, 3, 4, 5, 10 };
     // print it out, nicely
     System.out.println(Arrays.toString(startArr));
