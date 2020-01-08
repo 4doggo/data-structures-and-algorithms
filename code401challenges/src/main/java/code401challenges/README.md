@@ -7,4 +7,4 @@
 
 - https://github.com/shingoed/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/ArrayShift.java)
 
-- ![whiteboard](https://raw.githubusercontent.com/shingoed/data-structures-and-algorithms/assets/whiteboard2.png)
+- ![whiteboard](https://github.com/shingoed/data-structures-and-algorithms/tree/master/code401challengesassets/whiteboard2.png)
