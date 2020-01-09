@@ -1,30 +1,33 @@
 package code401challenges;
 
 import java.util.Arrays;
+//resource: https://www.baeldung.com/java-binary-searchhttps://www.baeldung.com/java-binary-search
 
 public class BinarySearch {
 
-//    public static int binarySearch(int[] sortedArray, int key) {
-//        int value = 0;
-//        int index = 0;
-//
-//        while (value <= key) {
-//            int mid = sortedArray.length / 2;
-//            if (sortedArray[mid] < key) {
-//                value = mid + 1;
-//            } else if (sortedArray[mid] > key) {
-//                value = mid - 1;
-//            } else if (sortedArray[mid] == key) {
-//                index = mid;
-//                break;
-//            }
-//        }
-//        return index;
-//    }
+    public static int binarySearch(int[] sortedArray, int key) {
+        int left = 0;
+        int right = sortedArray.length;
 
-    public static int binarySearch2(int[] sortedArray, int key){
-        int index = Arrays.binarySearch(sortedArray,key);
-        return index;
+        while (left <= right) {
+
+            int center = (left+right)/2;
+
+            if (sortedArray[center] > key ) {
+                right = center;
+            }
+            else if(sortedArray[center] < key){
+                left = center;
+            }
+
+            else {
+                return center;
+            }
+
+        }
+        return -1;
     }
+
+
 
 }
