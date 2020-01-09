@@ -11,20 +11,44 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
 public class LibraryTest {
-    @Test public void testSomeLibraryMethod() {
-        int[] testArrayEvenLength = new int[] {1,2,3,4,10,11};
-        int testValue1 = 99;
-        int[] expectedResult = new int[] {1,2,3,99,4,10,11};
+//    @Test public void testSomeLibraryMethod() {
+//        int[] testArrayEvenLength = new int[] {1,2,3,4,10,11};
+//        int testValue1 = 99;
+//        int[] expectedResult = new int[] {1,2,3,99,4,10,11};
+//
+//        assertTrue(Arrays.equals(ArrayShift.shiftArray(testArrayEvenLength, testValue1), expectedResult));
+//    }
+//
+//    @Test
+//    public void test01() {
+//        int[] testArrayEvenLength = new int[] {1,2,3,4,10,11};
+//        int testValue1 = 99;
+//        int[] expectedResult = new int[] {1,2,3,99,4,10,10};
+//
+//        assertThat(ArrayShift.shiftArray(testArrayEvenLength, testValue1), is(expectedResult));
+//    }
 
-        assertTrue(Arrays.equals(ArrayShift.shiftArray(testArrayEvenLength, testValue1), expectedResult));
-    }
+//
+//    @Test
+//    public void testBinarySearch(){
+//
+//        int[] testArray = new int[] {4,8,15,16,23,42};
+//        int testKey = 15;
+//        int expectedResult = 2;
+//
+//        assertEquals(expectedResult, BinarySearch.binarySearch(testArray, testKey));
+//    }
+
 
     @Test
-    public void test01() {
-        int[] testArrayEvenLength = new int[] {1,2,3,4,10,11};
-        int testValue1 = 99;
-        int[] expectedResult = new int[] {1,2,3,99,4,10,10};
+    public void testBinarySearch2(){
 
-        assertThat(ArrayShift.shiftArray(testArrayEvenLength, testValue1), is(expectedResult));
+        int[] testArray = new int[] {4,8,15,16,23,42};
+        int testKey = 15;
+        int expectedResult = 2;
+
+        assertEquals(expectedResult, BinarySearch.binarySearch2(testArray, testKey));
     }
 }
+
+

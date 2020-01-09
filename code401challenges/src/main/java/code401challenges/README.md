@@ -8,3 +8,9 @@
 - https://github.com/shingoed/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/ArrayShift.java)
 
 - ![whiteboard](/code401challenges/assets/whiteboard2.png)
+
+
+###Challenge 3 
+## Doing a binary search on a sorted array 
+
+
