@@ -8,3 +8,14 @@
 - https://github.com/shingoed/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/ArrayShift.java)
 
 - ![whiteboard](/code401challenges/assets/whiteboard2.png)
+
+
+###Challenge 3 
+## Doing a binary search on a sorted array 
+
+- set variables left and right to navigate through sorted array
+- used while loop to close in on the array
+
+- https://github.com/shingoed/.java)data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/BinarySearch)
+
+- ![whiteboard](/code401challenges/assets/whiteboard3.jpg)
