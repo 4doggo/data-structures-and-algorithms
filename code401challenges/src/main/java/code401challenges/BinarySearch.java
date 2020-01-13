@@ -9,7 +9,7 @@ public class BinarySearch {
         int left = 0;
         int right = sortedArray.length;
 
-        while (left <= right) {
+        while (left < right) {
 
             int center = (left+right)/2;
 
