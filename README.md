@@ -1,8 +1,8 @@
-# data-structures-and-algorithms
+# Data Structure & Algorithms
 
 ### Table of Contents 
 
-## Challenge 1 [ArrayReverse](code401challenges/src/main/java/ArrayReverse.java)
+## Challenge 1 [ArrayReverse](code401challenges/src/main/java/code401challenges/ArrayReverse.java)
 ## Challenge 2 [ArrayShift](code401challenges/src/main/java/code401challenges/ArrayShift.java)
-## Challenge 3 [BinarySearch](BinarySearch.java)
-## Challenge 4 [LinkedList](BinarySearch.java)
+## Challenge 3 [BinarySearch](code401challenges/src/main/java/code401challenges/BinarySearch.java)
+## Challenge 4 [LinkedList](code401challenges/src/main/java/code401challenges/LinkedList.java)
