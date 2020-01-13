@@ -1,3 +1,14 @@
+# data-structures-and-algorithms
+
+### Challenge 1
+## Reversing the array without using builtin methods
+
+### Approach & Efficiency
+We went with using the forloop and the counter to go over the array
+
+## Solution
+![Image description](/code401challenges/assets/ArrayReverse.jpg)
+
 ### Challenge 2 
 ## Inserting a value into the middle of an array 
 
@@ -10,7 +21,7 @@
 - ![whiteboard](/code401challenges/assets/whiteboard2.png)
 
 
-###Challenge 3 
+### Challenge 3 
 ## Doing a binary search on a sorted array 
 
 - set variables left and right to navigate through sorted array

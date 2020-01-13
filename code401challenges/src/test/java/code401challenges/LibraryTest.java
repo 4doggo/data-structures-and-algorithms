@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
 public class LibraryTest {
 
     @Test
-    public void testBinarySearch(){
+    public void testBinarySearch_AtTheIndexOf2(){
 
         int[] testArray = new int[] {4,8,15,16,23,42};
         int testKey = 15;
@@ -24,7 +24,7 @@ public class LibraryTest {
 
 
     @Test
-    public void testBinarySearch2(){
+    public void testBinarySearch_keyAtTheIndexOf5(){
 
         int[] testArray = new int[] {4,8,15,16,23,42};
         int testKey = 42;
@@ -35,7 +35,7 @@ public class LibraryTest {
     }
 
     @Test
-    public void testBinarySearch3(){
+    public void testBinarySearch_keyNotInArray(){
 
         int[] testArray = new int[] {4,8,15,16,23,42};
         int testKey = 100;
