@@ -6,16 +6,12 @@ package linkedlist;
 //https://stackoverflow.com/questions/19283083/printing-out-a-linked-list-using-tostring
 
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-
 public class LinkedList {
 
     Node head;
 
     public LinkedList(){
-
         this.head = null;
-
     }
 
 
@@ -29,7 +25,6 @@ public class LinkedList {
 
 
     public boolean includes(int target){
-
         Node current = head;
 
         while(current != null){
@@ -48,11 +43,13 @@ public class LinkedList {
         Node current = head;
 
         while (current != null) {
-            result += current.value;
-
+            result += "{ " + current.value + " }" + " -> ";
+            current = current.next;
         }
 
-        return "List: " + result;
+        return "List: " + result + " NULL";
+
+
     }
 
 }
