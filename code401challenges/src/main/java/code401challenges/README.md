@@ -1,12 +1,8 @@
-# data-structures-and-algorithms
-
 ### Challenge 1
 ## Reversing the array without using builtin methods
 
-### Approach & Efficiency
-We went with using the forloop and the counter to go over the array
+- We went with using the forloop and the counter to go over the array
 
-## Solution
 ![Image description](/code401challenges/assets/ArrayReverse.jpg)
 
 ### Challenge 2 
@@ -18,7 +14,7 @@ We went with using the forloop and the counter to go over the array
 
 - https://github.com/shingoed/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/ArrayShift.java)
 
-- ![whiteboard](/code401challenges/assets/whiteboard2.png)
+![whiteboard](/code401challenges/assets/whiteboard2.png)
 
 
 ### Challenge 3 
@@ -29,4 +25,6 @@ We went with using the forloop and the counter to go over the array
 
 - https://github.com/shingoed/.java)data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/BinarySearch)
 
-- ![whiteboard](/code401challenges/assets/whiteboard3.jpg)
+![whiteboard](/code401challenges/assets/whiteboard3.jpg)
+
+### Challenge 4
