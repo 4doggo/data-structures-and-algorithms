@@ -38,4 +38,15 @@ Instantiating a linked list, inserting a value into the list, checking for targe
 I took the approach of creating a constructor for the node that holds a value and a next. Created methods for each one and used a while loop to iterate over the linkedlist. 
 
 #### API
-<!-- Description of each method publicly available to your Linked List -->
+
+#### linkedList()
+    instantiates an empty linked list 
+
+#### insert() 
+    takes any value as an argument and adds a new node with that value to the head of the list with an O(1) Time performance.
+    
+#### includes()
+      takes any value as an argument and returns a boolean result depending on whether that value exists as a Node’s value somewhere within the list.
+      
+#### toString()
+        takes in no arguments and returns a string representing all the values in the Linked List, formatted as:"{ a } -> { b } -> { c } -> NULL"
