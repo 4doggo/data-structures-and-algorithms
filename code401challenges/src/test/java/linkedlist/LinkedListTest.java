@@ -63,10 +63,7 @@ public class LinkedListTest {
         myList.insert(7);
         int targetValue = 5;
 
-        assertEquals("5 is in the linked list",
-                true,
-                myList.includes(targetValue)
-        );
+        assertTrue("5 is in the linked list", myList.includes(targetValue));
     }
 
     //    testing to see if target value is inside the linked list
@@ -78,10 +75,7 @@ public class LinkedListTest {
         myList.insert(7);
         int targetValue = 8;
 
-        assertEquals("8 is not in the linked list",
-                false,
-                myList.includes(targetValue)
-        );
+        assertFalse("8 is not in the linked list", myList.includes(targetValue));
     }
 
     //    testing to see if string with all of the values in the linked list are returned
@@ -96,6 +90,18 @@ public class LinkedListTest {
                 "List: { 7 } -> { 5 } -> { 4 } ->  NULL",
                 myList.toString()
         );
+    }
+
+    //    testing to see if target is appended to the end of the LL
+    @Test
+    public void testAppend() {
+        LinkedList myList = new LinkedList();
+        myList.insert(4);
+        myList.insert(5);
+        myList.insert(7);
+
+
+        assertEquals(8, myList.append(8));
     }
 
 }
