@@ -92,6 +92,18 @@ public class LinkedListTest {
         );
     }
 
+    //    testing to see if target is appended to the end of the LL
+    @Test
+    public void testAppend() {
+        LinkedList myList = new LinkedList();
+        myList.insert(4);
+        myList.insert(5);
+        myList.insert(7);
+
+
+        assertEquals(8, myList.append(8));
+    }
+
 }
 
 

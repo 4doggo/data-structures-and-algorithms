@@ -51,7 +51,19 @@ public class LinkedList {
 
     }
 
-    public String
+    public void append (int target){
+
+        Node current = head;
+
+        while( current != null){
+            if(current.value == target){
+                return current.value;
+            }
+
+
+        }
+
+    }
 
 
 }
