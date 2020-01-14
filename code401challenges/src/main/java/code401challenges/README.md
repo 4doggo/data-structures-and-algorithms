@@ -50,3 +50,19 @@ I took the approach of creating a constructor for the node that holds a value an
       
 #### toString()
         takes in no arguments and returns a string representing all the values in the Linked List, formatted as:"{ a } -> { b } -> { c } -> NULL"
+        
+        
+### Challenge 5 
+#### appending and inserting to Linked List
+
+
+### Challenge Description
+- .append(value) which adds a new node with the given value to the end of the list
+- .insertBefore(value, newVal) which add a new node with the given newValue immediately before the first value node
+- .insertAfter(value, newVal) which add a new node with the given newValue immediately after the first value node
+
+### Approach & Efficiency
+Traversing through linked list using next, run a while loop and use temp variables
+
+### Solution
+![whiteboard](/code401challenges/assets/whiteboard4.jpg)

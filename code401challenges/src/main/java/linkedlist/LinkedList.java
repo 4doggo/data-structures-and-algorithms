@@ -3,7 +3,7 @@ package linkedlist;
 //reference:
 // https://stackoverflow.com/questions/38961553/create-new-node-for-singly-linked-list-in-java |
 // https://www.cs.cmu.edu/~adamchik/15-121/lectures/Linked%20Lists/linked%20lists.html
-//https://stackoverflow.com/questions/19283083/printing-out-a-linked-list-using-tostring
+// https://stackoverflow.com/questions/19283083/printing-out-a-linked-list-using-tostring
 
 
 public class LinkedList {
@@ -49,7 +49,9 @@ public class LinkedList {
 
         return "List: " + result + " NULL";
 
-
     }
+
+    public String
+
 
 }
