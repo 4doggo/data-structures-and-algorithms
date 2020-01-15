@@ -1,11 +1,11 @@
-### Challenge 1
+## Challenge 1
 #### Reversing the array without using builtin methods
 
 - We went with using the forloop and the counter to go over the array
 
 ![Image description](/code401challenges/assets/ArrayReverse.jpg)
 
-### Challenge 2 
+## Challenge 2 
 #### Inserting a value into the middle of an array 
 
 - I approached it using multiple if statements for odd and even length arrays with a for loop going over it. 
@@ -17,7 +17,7 @@
 ![whiteboard](/code401challenges/assets/whiteboard2.png)
 
 
-### Challenge 3 
+## Challenge 3 
 #### Doing a binary search on a sorted array 
 
 - set variables left and right to navigate through sorted array
@@ -27,7 +27,7 @@
 
 ![whiteboard](/code401challenges/assets/whiteboard3.jpg)
 
-### Challenge 4
+## Challenge 4
 #### Singly Linked List
 <!-- Short summary or background information -->
 
@@ -52,17 +52,35 @@ I took the approach of creating a constructor for the node that holds a value an
         takes in no arguments and returns a string representing all the values in the Linked List, formatted as:"{ a } -> { b } -> { c } -> NULL"
         
         
-### Challenge 5 
+## Challenge 6 
 #### appending and inserting to Linked List
 
 
 ### Challenge Description
-- .append(value) which adds a new node with the given value to the end of the list
-- .insertBefore(value, newVal) which add a new node with the given newValue immediately before the first value node
-- .insertAfter(value, newVal) which add a new node with the given newValue immediately after the first value node
+#### 
+    .append(value) which adds a new node with the given value to the end of the list
+####
+     .insertBefore(value, newVal) which add a new node with the given newValue immediately before the first value node
+####
+    .insertAfter(value, newVal) which add a new node with the given newValue immediately after the first value node
 
 ### Approach & Efficiency
 Traversing through linked list using next, run a while loop and use temp variables
 
 ### Solution
-![whiteboard](/code401challenges/assets/whiteboard4.jpg)
+![whiteboard](/code401challenges/assets/whiteboard4.JPG)
+
+
+## Challenge 7 
+#### Finding the kth value from the end of LL
+
+
+### Challenge Description
+#### ll.kthFromEnd(k) 
+     a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list. 
+
+### Approach & Efficiency
+Traversing through linked list using next, run a while loop and use counter. Use for loop to iterate the appropriate amount of times. 
+
+### Solution
+![whiteboard](/code401challenges/assets/whiteboard5.JPG)

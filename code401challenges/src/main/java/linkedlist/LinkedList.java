@@ -57,11 +57,21 @@ public class LinkedList {
 
         while( current != null){
             if(current.value == target){
-                return current.value;
+
             }
+
+        }
+
+    }
+
+    public void findKthFromEnd(int k){
+
+
+        if (head == null){
 
 
         }
+
 
     }
 
