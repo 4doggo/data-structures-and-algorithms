@@ -6,11 +6,11 @@ package linkedlist;
 // https://stackoverflow.com/questions/19283083/printing-out-a-linked-list-using-tostring
 
 
-public class LinkedList {
+public class LinkedList<I extends Number> {
 
     Node head;
 
-    public LinkedList(){
+    public LinkedList() {
         this.head = null;
     }
 
@@ -24,18 +24,18 @@ public class LinkedList {
     }
 
 
-    public boolean includes(int target){
+    public boolean includes(int target) {
         Node current = head;
 
-        while(current != null){
-            if(current.value == target){
+        while (current != null) {
+            if (current.value == target) {
                 return true;
             }
 
             current = current.next;
         }
 
-      return false;
+        return false;
     }
 
     public String toString() {
@@ -51,12 +51,14 @@ public class LinkedList {
 
     }
 
-    public void append (int target){
+    public void append(int target) {
 
         Node current = head;
 
-        while( current != null){
-            if(current.value == target){
+        while (current != null) {
+            if (current.value == target) {
+
+                target = current.value;
 
             }
 
@@ -64,16 +66,40 @@ public class LinkedList {
 
     }
 
-    public void findKthFromEnd(int k){
-
-
-        if (head == null){
-
-
+    //first find the size of LL
+    public int size() {
+        Node current = this.head;
+        if (current == null) {
+           return current.value;
+        } else {
+            int size = 0;
+            while (current != null) {
+                size++;
+                current = current.next;
+            }
+            return size;
         }
-
-
     }
 
 
+    //actual method to return the int at kth from end
+    public int findKthFromEnd(int k) {
+
+        Node current = head;
+        int sizeOfLinkedList = this.size();
+        int counter = 1;
+        int j = sizeOfLinkedList - k;
+
+        while (current != null) {
+            if (counter == j) {
+                return current.value;
+            } else {
+                counter++;
+                current = current.next;
+            }
+        }
+        return current.value;
+    }
 }
+
+
