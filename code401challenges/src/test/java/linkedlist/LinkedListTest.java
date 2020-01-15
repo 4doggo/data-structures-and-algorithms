@@ -100,7 +100,6 @@ public class LinkedListTest {
         myList.insert(5);
         myList.insert(7);
 
-
         assertEquals(8, myList.append(8));
     }
 
