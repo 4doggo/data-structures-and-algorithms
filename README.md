@@ -6,3 +6,5 @@
 ## Challenge 2 [ArrayShift](code401challenges/src/main/java/code401challenges/ArrayShift.java)
 ## Challenge 3 [BinarySearch](code401challenges/src/main/java/code401challenges/BinarySearch.java)
 ## Challenge 4 [LinkedList](code401challenges/src/main/java/linkedlist/LinkedList.java)
+## Challenge 6 [Appending](code401challenges/src/main/java/linkedlist/LinkedList.java)
+## Challenge 7 [kthFromEndofLL](code401challenges/src/main/java/linkedlist/LinkedList.java)
