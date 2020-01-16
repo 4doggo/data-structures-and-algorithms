@@ -9,3 +9,4 @@
 ## Challenge 4 [LinkedList](code401challenges/src/main/java/linkedlist/LinkedList.java)
 ## Challenge 6 [Appending](code401challenges/src/main/java/linkedlist/LinkedList.java)
 ## Challenge 7 [kthFromEndofLL](code401challenges/src/main/java/linkedlist/LinkedList.java)
+## Challenge 8 [mergeLL](code401challenges/src/main/java/linkedlist/LinkedList.java)
