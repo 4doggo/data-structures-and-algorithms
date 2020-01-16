@@ -1,7 +1,7 @@
 # Data Structure & Algorithms
 
 ### Table of Contents 
-### [Link to Sub README with whiteboards] (code401challenges/README.md)
+### [Link to Sub README with whiteboards](code401challenges/README.md)
 
 ## Challenge 1 [ArrayReverse](code401challenges/src/main/java/code401challenges/ArrayReverse.java)
 ## Challenge 2 [ArrayShift](code401challenges/src/main/java/code401challenges/ArrayShift.java)
