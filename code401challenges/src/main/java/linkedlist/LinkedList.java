@@ -6,6 +6,8 @@ package linkedlist;
 // https://stackoverflow.com/questions/19283083/printing-out-a-linked-list-using-tostring
 
 
+import java.util.List;
+
 public class LinkedList<I extends Number> {
 
     Node head;
@@ -100,6 +102,28 @@ public class LinkedList<I extends Number> {
         }
         return current.value;
     }
+
+//method to merge two LL
+    public static LinkedList mergeLinkedList(LinkedList a, LinkedList b){
+
+        LinkedList c = new LinkedList();
+        Node currentA = a.head;
+        Node currentB = b.head;
+
+ while(currentA != null && currentB != null){
+
+     c.append(currentA.value);
+//     listC.next = null;
+     c.append(currentB.value);
+//     listC.next = null;
+
+     currentA = currentA.next;
+     currentB = currentB.next;
+
+ }
+        return c;
+    }
+
 }
 
 

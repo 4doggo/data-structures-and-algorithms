@@ -118,6 +118,25 @@ public class LinkedListTest {
         assertEquals(5, ((LinkedList<Integer>) myList).findKthFromEnd(k));
     }
 
+    @Test
+    public void testMergeList(){
+
+        LinkedList a = new LinkedList();
+        LinkedList b = new LinkedList();
+        LinkedList c = new LinkedList();
+        a.insert(4);
+        a.insert(5);
+        a.insert(7);
+
+        b.insert(10);
+        b.insert(10);
+        b.insert(10);
+
+        assertEquals(4,10,5,10.7,10, LinkedList)
+
+    }
+
+
 }
 
 
