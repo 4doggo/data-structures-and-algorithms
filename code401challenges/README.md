@@ -84,3 +84,19 @@ Traversing through linked list using next, run a while loop and use counter. Use
 
 ### Solution
 ![whiteboard](/code401challenges/assets/whiteboard5.JPG)
+
+## Challenge 8 
+#### Merging two LL
+
+
+### Challenge Description
+#### ll.merge()
+      takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list. Try and keep additional space down to O(1). 
+
+### Approach & Efficiency
+Create new LL, add linked list alternately by using add() and then breaking the list each time so that the
+pointer forgets the next node and repeat the process until either of the list hits the tail. 
+
+### Solution
+![whiteboard](/code401challenges/assets/whiteboard6-1.jpg)
+![whiteboard](/code401challenges/assets/whiteboard6-2.jpg)
