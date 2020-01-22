@@ -10,3 +10,5 @@
 ## Challenge 6 [Appending](code401challenges/src/main/java/linkedlist/LinkedList.java)
 ## Challenge 7 [kthFromEndofLL](code401challenges/src/main/java/linkedlist/LinkedList.java)
 ## Challenge 8 [mergeLL](code401challenges/src/main/java/linkedlist/LinkedList.java)
+## Challenge 10 [stack](code401challenges/src/main/java/stacksandqueues/Stack.java)
+## Challenge 10 [queue](code401challenges/src/main/java/stacksandqueues/Queue.java)

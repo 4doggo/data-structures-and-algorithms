@@ -100,3 +100,20 @@ pointer forgets the next node and repeat the process until either of the list hi
 ### Solution
 ![whiteboard](/code401challenges/assets/whiteboard6-1.jpg)
 ![whiteboard](/code401challenges/assets/whiteboard6-2.jpg)
+
+## Challenge 10
+### Stacks and Queues 
+#### Stacks methods
+##### 
+    .push() which takes any value as an argument and adds a new node with that value to the top of the stack with an O(1) Time performance.
+    .pop()  does not take any argument, removes the node from the top of the stack, and returns the node’s value.
+    .peek() does not take an argument and returns the value of the node located on top of the stack, without removing it from the stack.
+    .isEmpty() does not take an argument, and returns a boolean indicating whether or not the stack is empty.
+    
+#### Queue methods
+#####
+    .enqueue() which takes any value as an argument and adds a new node with that value to the back of the queue with an O(1) Time performance.
+    .dequeue() does not take any argument, removes the node from the front of the queue, and returns the node’s value.
+    .peek() does not take an argument and returns the value of the node located in the front of the queue, without removing it from the queue.
+    .isEmpty() does not take an argument, and returns a boolean indicating whether or not the queue is empty.
+     
