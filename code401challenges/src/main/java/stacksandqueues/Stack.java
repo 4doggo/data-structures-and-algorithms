@@ -8,7 +8,6 @@ public class Stack {
 
     private Node top;
 
-
     public void push(int value){
 
         Node newNode = new Node(value);

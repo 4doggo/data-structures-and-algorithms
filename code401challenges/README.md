@@ -111,9 +111,40 @@ pointer forgets the next node and repeat the process until either of the list hi
     .isEmpty() does not take an argument, and returns a boolean indicating whether or not the stack is empty.
     
 #### Queue methods
-#####
+##### 
     .enqueue() which takes any value as an argument and adds a new node with that value to the back of the queue with an O(1) Time performance.
     .dequeue() does not take any argument, removes the node from the front of the queue, and returns the node’s value.
     .peek() does not take an argument and returns the value of the node located in the front of the queue, without removing it from the queue.
     .isEmpty() does not take an argument, and returns a boolean indicating whether or not the queue is empty.
      
+     
+## Challenge 11 
+#### 
+
+
+### Challenge Description
+#### Implement a Queue using two Stacks.
+    - enqueue(value) which inserts value into the PseudoQueue, using a first-in, first-out approach.
+    - dequeue() which extracts a value from the PseudoQueue, using a first-in, first-out approach.
+
+
+### Approach & Efficiency
+
+### Solution
+
+
+## Challenge 12 
+#### First-in, First out Animal Shelter.
+
+### Challenge Description
+#### Implement a Stack 
+      - Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
+      Implement the following methods:
+      - enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.
+      - dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then return null.
+
+### Approach & Efficiency
+
+
+### Solution
+![whiteboard](/code401challenges/assets/whiteboard12.JPG)
