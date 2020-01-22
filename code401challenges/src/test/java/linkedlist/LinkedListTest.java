@@ -107,16 +107,17 @@ public class LinkedListTest {
 //    }
 
 
-    @Test
-    public void testkthFromEnd() {
-        List<Integer> myList = new LinkedList<Integer>(Arrays.asList(4,5,7));
-//        myList.insert(4);
-//        myList.insert(5);
-//        myList.insert(7);
-        int k = 2;
+//    @Test
+//    public void testkthFromEnd() {
+//        List<Integer> myList = new LinkedList<Integer>(Arrays.asList(4,5,7));
+////        myList.insert(4);
+////        myList.insert(5);
+////        myList.insert(7);
+//        int k = 2;
+//
+//        assertEquals(5, ((LinkedList<Integer>) myList).findKthFromEnd(k));
+//    }
 
-        assertEquals(5, ((LinkedList<Integer>) myList).findKthFromEnd(k));
-    }
 
     @Test
     public void testMergeList(){
@@ -124,15 +125,32 @@ public class LinkedListTest {
         LinkedList a = new LinkedList();
         LinkedList b = new LinkedList();
         LinkedList c = new LinkedList();
-        a.insert(4);
-        a.insert(5);
-        a.insert(7);
+        LinkedList test = new LinkedList();
+
+        a.insert(1);
+        a.insert(2);
+        a.insert(3);
 
         b.insert(10);
         b.insert(10);
         b.insert(10);
 
-        assertEquals(4,10,5,10.7,10, LinkedList)
+        test.insert(3);
+        test.insert(10);
+        test.insert(2);
+        test.insert(10);
+        test.insert(1);
+        test.insert(10);
+
+        c.mergeLinkedList(a,b);
+        System.out.println(c.head);
+
+//        c.mergeLinkedList(a,b);
+//        assertEquals("10, 1, 10, 2, 10, 3",
+//                c.toString());
+//
+        assertEquals(test, c.mergeLinkedList(a,b));
+
 
     }
 
