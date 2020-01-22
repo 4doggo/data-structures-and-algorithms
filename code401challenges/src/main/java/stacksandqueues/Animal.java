@@ -1,5 +1,7 @@
 package stacksandqueues;
 
-public class PseudoQueue {
+public class Animal {
+
+
 
 }
