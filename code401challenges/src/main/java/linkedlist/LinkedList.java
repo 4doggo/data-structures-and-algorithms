@@ -112,10 +112,8 @@ public class LinkedList<I extends Number> {
 
  while(currentA != null && currentB != null){
 
-     c.append(currentA.value);
-//     listC.next = null;
-     c.append(currentB.value);
-//     listC.next = null;
+     c.insert(currentA.value);
+     c.insert(currentB.value);
 
      currentA = currentA.next;
      currentB = currentB.next;
