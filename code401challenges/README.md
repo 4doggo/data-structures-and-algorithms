@@ -148,3 +148,21 @@ pointer forgets the next node and repeat the process until either of the list hi
 
 ### Solution
 ![whiteboard](/code401challenges/assets/whiteboard12.JPG)
+
+
+## Challenge 13 
+#### Multi-bracket Validation.
+
+### Challenge Description
+#### public static boolean multiBracketValidation(String input)
+    - Your function should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced. There are 3 types of brackets:
+     
+     Round Brackets : ()
+     Square Brackets : []
+     Curly Brackets : {}
+
+### Approach & Efficiency
+
+
+### Solution
+![whiteboard](/code401challenges/assets/whiteboard13.JPG)
