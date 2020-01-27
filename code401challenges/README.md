@@ -169,11 +169,10 @@ pointer forgets the next node and repeat the process until either of the list hi
 
 
 # Trees
-<!-- Short summary or background information -->
 
 ## Challenge
-### Binary Tree 
-####Traversal methods
+### Binary Search Tree & Tree 
+####Traversal method of tree
 - preOrder 
 - inOrder
 - postOrder
@@ -184,7 +183,4 @@ pointer forgets the next node and repeat the process until either of the list hi
 - contains: accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-
-## API
-<!-- Description of each method publicly available in each of your trees -->
+Recursion is the approach that was made to solve both traversals and adding/containing
