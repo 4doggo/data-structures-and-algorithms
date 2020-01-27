@@ -11,7 +11,7 @@ public class MultiBracketValidationTest {
     @Test
     public void testBracket(){
         stack = new Stack();
-        
+
         stack.push('{');
         System.out.println(stack.peek());
         stack.push('}');

@@ -166,3 +166,25 @@ pointer forgets the next node and repeat the process until either of the list hi
 
 ### Solution
 ![whiteboard](/code401challenges/assets/whiteboard13.JPG)
+
+
+# Trees
+<!-- Short summary or background information -->
+
+## Challenge
+### Binary Tree 
+####Traversal methods
+- preOrder 
+- inOrder
+- postOrder
+
+###Binary Search Tree
+####
+- add: accepts a value, and adds a new node with that value in the correct location in the binary search tree.
+- contains: accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+## API
+<!-- Description of each method publicly available in each of your trees -->
