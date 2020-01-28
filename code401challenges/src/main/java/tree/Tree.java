@@ -4,6 +4,7 @@ public class Tree {
 
     private Node root;
 
+
     public void preOrder(){
 
         recursionPreOrder(root);
@@ -56,7 +57,5 @@ public class Tree {
         System.out.println(current);
 
     }
-
-
 
 }

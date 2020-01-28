@@ -29,7 +29,7 @@ public class BinarySearchTree {
             return current;
     }
 
-
+//O(h) the height
     public boolean containsRecursive(Node current, int key){
 
        if(current==null) {
