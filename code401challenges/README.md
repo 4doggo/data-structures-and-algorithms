@@ -202,3 +202,17 @@ Recursion is the approach that was made to solve both traversals and adding/cont
 
 ### Solution
 ![whiteboard](/code401challenges/assets/whiteboard16.JPG)
+
+
+## Challenge 17
+#### Breadth-first Traversal
+
+### Challenge Description
+#### traversing binary tree then storing value in list
+     Write a breadth first traversal method which takes a Binary Tree as its unique input. 
+     Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach, and return a list of the values in the tree in the order they were encountered.
+
+### Approach & Efficiency
+
+### Solution
+![whiteboard](/code401challenges/assets/whiteboard16.JPG)
