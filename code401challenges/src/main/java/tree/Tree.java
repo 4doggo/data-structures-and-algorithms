@@ -58,4 +58,31 @@ public class Tree {
 
     }
 
+
+    public int findMax(Node root){
+
+        if(root == null){
+            return 0;
+        }
+
+        if(root!=null){
+
+            int current = node.value;
+            int leftResult = findMax(root.leftChild);
+            int rightResult = findMax(root.rightChild);
+
+            if(leftResult > current){
+                current = leftResult;
+            }
+
+            if(rightResult > current){
+                current = rightResult;
+            }
+
+            return current;
+        }
+        return current;
+    }
+
+
 }
