@@ -25,8 +25,6 @@ public class TreeTest {
     @Test
     public void preOrder() {
 
-
-
     }
 
     @Test
@@ -36,4 +34,13 @@ public class TreeTest {
     @Test
     public void postOrder() {
     }
+
+
+    @Test
+    public void testFindMax(){
+
+    assertEquals(12,tree.findMax(tree.root));
+
+    }
+
 }
