@@ -225,4 +225,16 @@ Recursion is the approach that was made to solve both traversals and adding/cont
     contains: takes in the key and returns a boolean, indicating if the key exists in the table already.
     hash: takes in an arbitrary key and returns an index in the collection.
     
-     
+
+## Challenge 31
+#### Hashset
+
+### Challenge Description
+#### Find the first repeated word in a book.
+     Write a function that accepts a lengthy string parameter.
+     Without utilizing any of the built-in library methods available to your language, return the first word to occur more than once in that provided string.
+
+### Approach & Efficiency
+
+### Solution
+![whiteboard](/code401challenges/assets/whiteboard30.JPG)
