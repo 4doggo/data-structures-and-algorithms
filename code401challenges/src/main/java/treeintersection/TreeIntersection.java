@@ -1,6 +1,6 @@
 package treeintersection;
 
-//src: https://www.geeksforgeeks.org/print-common-nodes-in-two-binary-search-trees/ 
+//src: https://www.geeksforgeeks.org/print-common-nodes-in-two-binary-search-trees/
 
 import java.util.Stack;
 
@@ -12,7 +12,6 @@ public class TreeIntersection {
             int key;
             Node left, right;
         }
-
 
         static Node newNode(int ele)
         {

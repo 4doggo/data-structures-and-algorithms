@@ -276,3 +276,19 @@ Recursion is the approach that was made to solve both traversals and adding/cont
 ### Approach & Efficiency
 
 ### Solution
+
+## Challenge 36
+#### Breadth-first Traversal
+
+### Challenge Description
+#### Implement a breadth-first traversal on a graph.
+    Extend your graph object with a breadth-first traversal method that accepts a starting node. Without utilizing any 
+    of the built-in methods available to your language, return a collection of nodes in the order they were visited. 
+    Display the collection.
+
+### Approach & Efficiency
+- implement a queue to store the values as you traverse 
+- Check if the graph is null or not
+
+### Solution
+![whiteboard](/code401challenges/assets/whiteboard36.JPG)
