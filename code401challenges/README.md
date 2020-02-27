@@ -248,7 +248,7 @@ Recursion is the approach that was made to solve both traversals and adding/cont
 ### Approach & Efficiency
 
 ### Solution
-![whiteboard](/code401challenges/assets/whiteboard34.5JPG)
+![whiteboard](/code401challenges/assets/whiteboard34.5.JPG)
 
 ## Challenge 35
 #### Graph
