@@ -248,7 +248,7 @@ Recursion is the approach that was made to solve both traversals and adding/cont
 ### Approach & Efficiency
 
 ### Solution
-![whiteboard](/code401challenges/assets/whiteboard30.JPG)
+![whiteboard](/code401challenges/assets/whiteboard34.5JPG)
 
 ## Challenge 35
 #### Graph
@@ -292,3 +292,16 @@ Recursion is the approach that was made to solve both traversals and adding/cont
 
 ### Solution
 ![whiteboard](/code401challenges/assets/whiteboard36.JPG)
+
+
+## Challenge 38
+#### Depth-first Traversal
+
+### Challenge Description
+#### Conduct a depth first preorder traversal on a graph
+    Create a function that accepts an adjacency list as a graph, and conducts a depth first traversal. Without 
+    utilizing any of the built-in methods available to your language, return a collection of nodes in their pre-order 
+    depth-first traversal order.
+
+### Solution
+![whiteboard](/code401challenges/assets/whiteboard38.JPG)
